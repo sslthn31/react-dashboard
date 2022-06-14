@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Anto",
+      "username": "Ant01",
+      "website": "facebook.com",
+      "phone": "2313212"
+    },
+    {
+      "id": 2,
+      "name": "Budi",
+      "username": "Bud02",
+      "website": "instagram.com",
+      "phone": "3123412"
+    },
+    {
+      "id": 3,
+      "name": "Coki",
+      "username": "Cok03",
+      "website": "tiktok.com",
+      "phone": "312314"
+    },
+    {
+      "name": "Nanda",
+      "username": "Nant04",
+      "website": "youtube.com",
+      "phone": "42324",
+      "id": 4
+    }
+  ]
+}

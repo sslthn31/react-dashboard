@@ -1,0 +1,481 @@
+@import '~antd/dist/antd.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site-layout .header-layout {
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rigth-side {
+  display: flex;
+  align-items: center;
+}
+.rigth-side .icon {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+.header-layout .rigth-side .profile {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+  align-items: center;
+}
+
+.rigth-side h4 {
+  margin: 0 10px;
+}
+
+.site-layout-background {
+  display: flex;
+  justify-content: space-around;
+}
+.first-column {
+  margin-right: 1rem;
+}
+/* Profile */
+.profile-container {
+  background-color: #fff;
+  height: 100%;
+  width: 350px;
+  border-radius: 5px;
+  position: relative;
+}
+.profile-bg {
+  margin-bottom: 3rem;
+}
+.profile-bg img {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.profile-bg .avatar {
+  position: absolute;
+  top: 15%;
+  left: 43%;
+}
+.profile-title {
+  text-align: center;
+}
+.profile-list {
+  padding: 1rem;
+}
+
+.profile-list .profile:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-list .profile {
+  line-height: 15px;
+  margin: 1rem 0;
+}
+
+.profile-list .profile h5 {
+  display: flex;
+  align-items: center;
+}
+.profile-list .profile .icon {
+  width: 20px;
+  height: auto;
+}
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column:nth-of-type(1) {
+  margin-right: 1rem;
+}
+.column {
+  margin: 10px 0;
+}
+
+/*Bank Account */
+.bank-account-container {
+  background-color: #fff;
+  width: 350px;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.bank-account-container .bank-account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.bank-account-header h3 {
+  font-weight: bold;
+  font-size: 15px;
+}
+.bank-account-header button {
+  width: 160px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #2b6130;
+  color: #fff;
+  cursor: pointer;
+}
+.bank-account {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.bank-account .logo {
+  background: #add100; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #7b920a, #add100); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #7b920a, #add100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  width: 120px;
+  height: 100px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.bank-account:nth-of-type(2) .logo {
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2f80ed, #56ccf2); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2f80ed, #56ccf2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.logo .visa {
+  width: 40px;
+  height: auto;
+  color: #fff;
+}
+
+.bank-account .bank-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.bank-account .bank-desc h4 {
+  color: #b4b4b4;
+}
+
+.bank-account .bank-desc h4:nth-of-type(1) {
+  font-size: 10px;
+}
+
+/* Location */
+.location-container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.location-header {
+  display: flex;
+  justify-content: space-between;
+}
+.location-list {
+  display: flex;
+  justify-content: space-between;
+}
+.location {
+  width: 250px;
+  height: auto;
+  background-color: #42934a;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.location:nth-of-type(2) {
+  background-color: #50b058;
+}
+.location:nth-of-type(3) {
+  background-color: #50b058;
+}
+.location-icon {
+  width: 35px;
+  height: auto;
+  color: #fff;
+}
+.location-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  line-height: 10px;
+}
+
+.location-desc h3 {
+  font-size: 20px;
+}
+.location-desc h5 {
+  font-size: 10px;
+  font-weight: 400;
+}
+.location-desc h3,
+.location-desc h5 {
+  color: #fff;
+}
+
+/* Activity */
+.activity-container {
+  background-color: #fff;
+  width: 350px;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.activity-header {
+  margin-bottom: 1rem;
+}
+
+.activity {
+  line-height: 1rem;
+}
+.activity p:nth-of-type(1) {
+  font-size: 12px;
+}
+.activity p:nth-of-type(2) {
+  font-size: 10px;
+}
+
+/* Relation  */
+.relation-container {
+  width: 350px;
+  height: 100%;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.relation-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.relation {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.relation .icon {
+  width: 45px;
+  height: auto;
+}
+
+.relation-desc {
+  line-height: 10px;
+}
+
+.relation-desc h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+/* Page 2 */
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+tr th h1 {
+  text-align: center;
+}
+th,
+td {
+  padding: 1rem;
+  background: #ddd;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+.table button {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.table .new-button {
+  background-color: #1969c5;
+}
+.table .edit-button {
+  background-color: #389241;
+}
+.table .delete-button {
+  background-color: #2b6130;
+}
+.table .button {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .site-layout-background {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .profile-bg .avatar {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+  }
+
+  .second-column {
+    padding: 1rem 0;
+  }
+
+  .bank-account-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .activity p:nth-of-type(1) {
+    font-size: 14px;
+  }
+  .activity p:nth-of-type(2) {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .site-layout .header-layout {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .header-layout .rigth-side .profile {
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-layout-background {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-container {
+    position: relative;
+    height: 100%;
+    width: 250px;
+  }
+
+  .profile-bg img {
+    height: 120px;
+  }
+
+  .profile-bg .avatar {
+    position: absolute;
+    top: 13%;
+    left: 40%;
+  }
+
+  .second-column {
+    padding: 1rem 0;
+  }
+  .location-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .location {
+    width: 200px;
+    height: auto;
+    margin: 0.5rem;
+  }
+
+  .bank-account-container {
+    width: 250px;
+    height: auto;
+  }
+
+  .bank-account-header h3 {
+    font-size: 12px;
+  }
+
+  .bank-account-header button {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .bank-account .logo {
+    width: 100px;
+    height: 90px;
+    margin-right: 1rem;
+  }
+
+  .logo .visa {
+    width: 30px;
+  }
+
+  .bank-account .bank-title h4 {
+    font-size: 14px;
+  }
+  .bank-icon .icon {
+    width: 14px;
+    height: auto;
+  }
+
+  .bank-account .bank-desc h4:nth-of-type(1) {
+    font-size: 10px;
+  }
+  .bank-account .bank-desc h4:nth-of-type(2) {
+    font-size: 9px;
+  }
+
+  .activity-container {
+    width: 250px;
+    height: auto;
+  }
+
+  .activity p:nth-of-type(1) {
+    font-size: 13px;
+  }
+  .activity p:nth-of-type(2) {
+    font-size: 9px;
+  }
+
+  .relation-container {
+    width: 250px;
+    height: auto;
+  }
+
+  .relation .icon {
+    width: 35px;
+    height: auto;
+  }
+
+  .relation-desc h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  table {
+    width: 100%;
+  }
+}
